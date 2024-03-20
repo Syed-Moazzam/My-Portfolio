@@ -16,7 +16,7 @@ export const projectsArray = [
     {
         img: netflix,
         title: 'Netflix Clone App',
-        description: "This app utilizes Reactjs for a user-friendly interface, mirroring the seamless experience of top streaming services with a vast library of movies and TV shows. Users effortlessly browse, search, and watch content. With personalized recommendations and profiles, our platform ensures an immersive entertainment experience. Emphasizing responsiveness and intuitive design, our Netflix clone guarantees exceptional viewing across all devices, while effortless sharing enhances the vibrant discovery of captivating content, enriching the viewing experience for all.",
+        description: "This app utilizes Reactjs for a user-friendly interface, mirroring the seamless experience of top streaming services with a vast library of movies and TV shows. Users effortlessly browse, search, and watch content. With personalized recommendations and profiles, our platform ensures an immersive entertainment experience. Emphasizing responsiveness and intuitive design, our platform guarantees exceptional viewing across all devices, while effortless sharing enhances the vibrant discovery of captivating content, enriching the viewing experience for all.",
         ghLink: 'https://github.com/Syed-Moazzam/MERN-E-Commerce-App',
         demoLink: 'https://mern-e-commerce-app-wsg3.onrender.com/'
     },
