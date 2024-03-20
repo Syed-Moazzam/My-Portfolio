@@ -665,7 +665,7 @@ button:focus {
 }
 
 .card-img-top {
-  padding: 20px !important;
+  padding: 20px 0px !important;
   opacity: 1 !important;
   border-radius: 10px !important;
 }

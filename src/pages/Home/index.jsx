@@ -198,7 +198,7 @@ const Home = () => {
             <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
               {projectsArray.map((project, index) => {
                 return (
-                  <Col md={4} className="project-card" key={index}>
+                  <Col sm={12} md={6} lg={6} xl={4} className="project-card" key={index}>
                     <ProjectCard
                       img={project?.img}
                       title={project?.title}
