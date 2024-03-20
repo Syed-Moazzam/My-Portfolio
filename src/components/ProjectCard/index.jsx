@@ -32,7 +32,7 @@ const ProjectCard = (props) => {
           flexDirection: "column"
         }}
       >
-        <Card.Title>{props.title}</Card.Title>
+        <Card.Title style={{ marginBottom: '15px' }}>{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify", fontSize: "15px" }}>
           {props.description}
         </Card.Text>

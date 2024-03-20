@@ -1,6 +1,7 @@
 import ecommerce from "../assets/projects/ecommerce.png";
 import netflix from "../assets/projects/netflix.png";
 import foodOrdering from "../assets/projects/food-ordering.png";
+import realEstate from "../assets/projects/real-estate.png";
 import tafsolIcon from '../assets/tafsol-icon.png';
 import ephluxIcon from '../assets/ephlux-icon.jpg';
 
@@ -15,21 +16,21 @@ export const projectsArray = [
     {
         img: netflix,
         title: 'Netflix Clone App',
-        description: "This app uses Reactjs at the client-side for user friendly and intuitive interface and mirrors the renowned streaming giant's seamless user experience, offering a vast library of movies and TV shows. Users can browse, search, and watch their favorite content effortlessly. With personalized recommendations and user profiles, our platform ensures an immersive and tailored entertainment experience for every viewer. Emphasizing responsiveness and intuitive design, our Netflix clone app guarantees an exceptional viewing experience across all devices.",
+        description: "This app utilizes Reactjs for a user-friendly interface, mirroring the seamless experience of top streaming services with a vast library of movies and TV shows. Users effortlessly browse, search, and watch content. With personalized recommendations and profiles, our platform ensures an immersive entertainment experience. Emphasizing responsiveness and intuitive design, our Netflix clone guarantees exceptional viewing across all devices, while effortless sharing enhances the vibrant discovery of captivating content, enriching the viewing experience for all.",
         ghLink: 'https://github.com/Syed-Moazzam/MERN-E-Commerce-App',
         demoLink: 'https://mern-e-commerce-app-wsg3.onrender.com/'
     },
     {
         img: netflix,
         title: 'Blogs App',
-        description: 'This platform features a responsive interface built with Reactjs and CSS, allowing users to easily manage their profiles and posts through CRUD operations. The option to follow other users and interact with their posts (like or dislike) is also available, with suggestions for new users to follow. Users can only view posts from their followed users and can only engage in chat with those they follow. The backend is powered by Nodejs and Expressjs server, while MongoDB is utilized as the database.',
-        ghLink: 'https://github.com/Syed-Moazzam/MERN-E-Commerce-App',
+        description: 'This platform features a responsive interface built with Reactjs and CSS, allowing users to easily manage their profiles and posts through CRUD operations. The option to follow other users and interact with their posts (like or dislike) is also available, with suggestions for new users to follow. Users can only view posts from their followed users and can only engage in chat with those they follow. The backend is powered by Nodejs and Expressjs server, while MongoDB is utilized as the database. Dive into a vibrant blogging community, where inspiration flows freely.',
+        ghLink: 'https://github.com/Syed-Moazzam/MERN-Blogs-App',
         demoLink: 'https://mern-e-commerce-app-wsg3.onrender.com/'
     },
     {
-        img: netflix,
+        img: realEstate,
         title: 'Real Estate App',
-        description: 'This blogging application features a RESTful API server built with Nodejs and Expressjs. The data is retrieved from the API server and displayed on a user-friendly interface designed using React, Redux, and styled-components for a seamless experience.',
+        description: "This platform is your ultimate real estate companion, seamlessly connecting users to their dream properties with just a tap. With personalized profiles at your fingertips, effortlessly create listings for properties to rent or sell across diverse categories. Whether you're on the hunt for your next home or seeking the perfect investment opportunity, our intuitive search feature ensures you find exactly what you're looking for. Welcome to the future of real estate, where convenience meets choice in the palm of your hand.",
         ghLink: 'https://github.com/Syed-Moazzam/MERN-Real-Estate-App',
         demoLink: 'https://mern-real-estate-app-kbi6.onrender.com/'
     },
@@ -44,7 +45,7 @@ export const projectsArray = [
         img: foodOrdering,
         title: 'Food Ordering App',
         description: "'The Heaven's Kitchen' – an exquisite  and user friendly restaurant website meticulously crafted with HTML, CSS and JavaScript. Dive into a culinary journey like no other as you explore our enticing array of specialties, tantalizing your taste buds with every click. From delectable dishes to heartfelt reviews, our platform offers a seamless blend of elegance and functionality. Discover our popular menu items, learn about our passion for food in the about section, and effortlessly place orders to savor our heavenly creations.",
-        ghLink: 'https://github.com/Syed-Moazzam/MERN-Real-Estate-App',
+        ghLink: 'https://github.com/Syed-Moazzam/Restaurant-Website-HTML-CSS-JS',
         demoLink: 'https://mern-real-estate-app-kbi6.onrender.com/'
     }
 ];
