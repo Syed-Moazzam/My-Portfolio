@@ -223,9 +223,9 @@ const Home = () => {
             </Col>
             <Col md={5} className="c-right">
               <form ref={form} onSubmit={sendEmail}>
-                <input type="text" name="from_name" className="user" placeholder="Name..." value={formData?.from_name} onChange={handleChange} />
-                <input type="email" name="reply_to" className="user" placeholder="Email..." value={formData?.reply_to} onChange={handleChange} />
-                <textarea name="message" className="user" placeholder="Message..." value={formData?.message} onChange={handleChange} />
+                <input type="text" name="from_name" className="user" placeholder="Name..." value={formData?.from_name} onChange={handleChange} disabled={done || notDone} />
+                <input type="email" name="reply_to" className="user" placeholder="Email..." value={formData?.reply_to} onChange={handleChange} disabled={done || notDone} />
+                <textarea name="message" className="user" placeholder="Message..." value={formData?.message} onChange={handleChange} disabled={done || notDone} />
                 <div className='contact-me-send-btn-container'>
                   {notDone && <span className='not-done' >Please fill all the input fields!</span>}
                   <Button type="submit" className="button" disabled={done} style={{ margin: notDone ? '18px auto 0px' : done ? '0px auto 18px' : "" }}>Send</Button>
