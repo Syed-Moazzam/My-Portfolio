@@ -29,9 +29,7 @@ const ProjectCard = (props) => {
       <Card.Body
         style={{
           display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
-          alignContent: "space-between",
+          flexDirection: "column"
         }}
       >
         <Card.Title>{props.title}</Card.Title>
