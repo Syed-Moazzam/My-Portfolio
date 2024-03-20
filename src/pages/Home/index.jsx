@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from '../../assets/about.png';
 import Particle from '../../components/Particle';
@@ -21,7 +21,11 @@ const Home = () => {
   const form = useRef();
   const [done, setDone] = useState(false)
   const [notDone, setNotDone] = useState(false)
-  const [formData, setFormData] = useState({});
+  const [formData, setFormData] = useState({
+    from_name: "",
+    reply_to: "",
+    message: ""
+  });
 
   const aboutRef = useRef();
   const workExpRef = useRef();
@@ -37,7 +41,7 @@ const Home = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    if (!formData.from_name || !formData.reply_to || !formData.message) {
+    if (!formData?.from_name || !formData?.reply_to || !formData?.message) {
       setNotDone(true)
     } else {
       emailjs
@@ -47,11 +51,9 @@ const Home = () => {
           form.current,
           process.env.REACT_APP_PUBLIC_KEY
         )
-        .then(
-          (result) => {
-            console.log(result.text);
-            setDone(true);
-          },
+        .then(() => {
+          setDone(true);
+        },
           (error) => {
             console.log(error.text);
           }
@@ -66,6 +68,22 @@ const Home = () => {
     projectsRef,
     contactRef
   };
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (done) {
+        setDone(false);
+      }
+      if (notDone) {
+        setNotDone(false);
+      }
+      setFormData({
+        from_name: "",
+        reply_to: "",
+        message: ""
+      })
+    }, 3200);
+  }, [done, notDone]);
 
   return (
     <>
@@ -205,9 +223,9 @@ const Home = () => {
             </Col>
             <Col md={5} className="c-right">
               <form ref={form} onSubmit={sendEmail}>
-                <input type="text" name="from_name" className="user" placeholder="Name..." onChange={handleChange} />
-                <input type="email" name="reply_to" className="user" placeholder="Email..." onChange={handleChange} />
-                <textarea name="message" className="user" placeholder="Message..." onChange={handleChange} />
+                <input type="text" name="from_name" className="user" placeholder="Name..." value={formData?.from_name} onChange={handleChange} />
+                <input type="email" name="reply_to" className="user" placeholder="Email..." value={formData?.reply_to} onChange={handleChange} />
+                <textarea name="message" className="user" placeholder="Message..." value={formData?.message} onChange={handleChange} />
                 <div className='contact-me-send-btn-container'>
                   {notDone && <span className='not-done' >Please fill all the input fields!</span>}
                   <Button type="submit" className="button" disabled={done} style={{ margin: notDone ? '18px auto 0px' : done ? '0px auto 18px' : "" }}>Send</Button>
