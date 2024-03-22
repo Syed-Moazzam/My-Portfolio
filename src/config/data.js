@@ -44,9 +44,9 @@ export const projectsArray = [
     {
         img: foodOrdering,
         title: 'Food Ordering App',
-        description: "'The Heaven's Kitchen' – an exquisite  and user friendly restaurant website meticulously crafted with HTML, CSS and JavaScript. Dive into a culinary journey like no other as you explore our enticing array of specialties, tantalizing your taste buds with every click. From delectable dishes to heartfelt reviews, our platform offers a seamless blend of elegance and functionality. Discover our popular menu items, learn about our passion for food in the about section, and effortlessly place orders to savor our heavenly creations.",
+        description: "'Flavor Fusion Lab' – an exquisite  and user friendly restaurant website meticulously crafted with HTML, CSS and JavaScript. Dive into a culinary journey like no other as you explore our enticing array of specialties, tantalizing your taste buds with every click. From delectable dishes to heartfelt reviews, our platform offers a seamless blend of elegance and functionality. Discover our popular menu items, learn about our passion for food in the about section, and effortlessly place orders to savor our heavenly creations.",
         ghLink: 'https://github.com/Syed-Moazzam/Restaurant-Website-HTML-CSS-JS',
-        demoLink: 'https://mern-real-estate-app-kbi6.onrender.com/'
+        demoLink: 'https://flavor-fusion-lab.vercel.app/'
     }
 ];
 
