@@ -14,20 +14,6 @@ export const projectsArray = [
         demoLink: 'https://mern-e-commerce-app-wsg3.onrender.com/'
     },
     {
-        img: netflix,
-        title: 'Netflix Clone App',
-        description: "This app utilizes Reactjs for a user-friendly interface, mirroring the seamless experience of top streaming services with a vast library of movies and TV shows. Users effortlessly browse, search, and watch content. With personalized recommendations and profiles, our platform ensures an immersive entertainment experience. Emphasizing responsiveness and intuitive design, our platform guarantees exceptional viewing across all devices, while effortless sharing enhances the vibrant discovery of captivating content, enriching the viewing experience for all.",
-        ghLink: 'https://github.com/Syed-Moazzam/MERN-E-Commerce-App',
-        demoLink: 'https://mern-e-commerce-app-wsg3.onrender.com/'
-    },
-    {
-        img: netflix,
-        title: 'Blogs App',
-        description: 'This platform features a responsive interface built with Reactjs and CSS, allowing users to easily manage their profiles and posts through CRUD operations. The option to follow other users and interact with their posts (like or dislike) is also available, with suggestions for new users to follow. Users can only view posts from their followed users and can only engage in chat with those they follow. The backend is powered by Nodejs and Expressjs server, while MongoDB is utilized as the database. Dive into a vibrant blogging community, where inspiration flows freely.',
-        ghLink: 'https://github.com/Syed-Moazzam/MERN-Blogs-App',
-        demoLink: 'https://mern-e-commerce-app-wsg3.onrender.com/'
-    },
-    {
         img: realEstate,
         title: 'Real Estate App',
         description: "This platform is your ultimate real estate companion, seamlessly connecting users to their dream properties with just a tap. With personalized profiles at your fingertips, effortlessly create listings for properties to rent or sell across diverse categories. Whether you're on the hunt for your next home or seeking the perfect investment opportunity, our intuitive search feature ensures you find exactly what you're looking for. Welcome to the future of real estate, where convenience meets choice in the palm of your hand.",
@@ -36,10 +22,24 @@ export const projectsArray = [
     },
     {
         img: netflix,
+        title: 'Netflix Clone App',
+        description: "This app utilizes Reactjs for a user-friendly interface, mirroring the seamless experience of top streaming services with a vast library of movies and TV shows. Users effortlessly browse, search, and watch content. With personalized recommendations and profiles, our platform ensures an immersive entertainment experience. Emphasizing responsiveness and intuitive design, our platform guarantees exceptional viewing across all devices, while effortless sharing enhances the vibrant discovery of captivating content, enriching the viewing experience for all.",
+        ghLink: 'https://github.com/Syed-Moazzam/Netflix-Clone-App',
+        demoLink: 'https://react-netflix-replica.vercel.app/'
+    },
+    {
+        img: netflix,
         title: 'Real-Time Chat App',
         description: "Real-time chat app is crafted using MERN stack and integrated with web sockets for instant messaging. Connect effortlessly with friends, colleagues, or loved ones, engaging in lively conversations and sharing moments in real-time. With a sleek and intuitive interface, navigating through this platform is a breeze, ensuring seamless interaction across devices. This platform is developed with functionalities similar to WhatsApp and Messenger and users can communicate with each other instantly.",
         ghLink: 'https://github.com/Syed-Moazzam/MERN-Real-Estate-App',
         demoLink: 'https://mern-real-estate-app-kbi6.onrender.com/'
+    },
+    {
+        img: netflix,
+        title: 'Blogs App',
+        description: 'This platform features a responsive interface built with Reactjs and CSS, allowing users to easily manage their profiles and posts through CRUD operations. The option to follow other users and interact with their posts (like or dislike) is also available, with suggestions for new users to follow. Users can only view posts from their followed users and can only engage in chat with those they follow. The backend is powered by Nodejs and Expressjs server, while MongoDB is utilized as the database. Dive into a vibrant blogging community, where inspiration flows freely.',
+        ghLink: 'https://github.com/Syed-Moazzam/MERN-Blogs-App',
+        demoLink: 'https://mern-e-commerce-app-wsg3.onrender.com/'
     },
     {
         img: foodOrdering,
