@@ -49,6 +49,8 @@ const ProjectCard = (props) => {
             textAlign: "center",
             position: "relative",
             bottom: "0px",
+            fontSize: '15.5px',
+            fontWeight: '500'
           }}
         >
           <BsGithub /> &nbsp;
@@ -56,8 +58,6 @@ const ProjectCard = (props) => {
         </Button>
         {"\n"}
         {"\n"}
-
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
 
         {props.demoLink && (
           <Button
@@ -73,6 +73,8 @@ const ProjectCard = (props) => {
               textAlign: "center",
               position: "static",
               bottom: "0px",
+              fontSize: '15.5px',
+              fontWeight: '500'
             }}
           >
             <CgWebsite /> &nbsp;
