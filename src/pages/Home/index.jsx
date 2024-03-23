@@ -16,6 +16,7 @@ import { projectsArray } from '../../config/data';
 import ProjectCard from '../../components/ProjectCard';
 import Experience from '../../components/Experience';
 import emailjs from "@emailjs/browser";
+import Loader from '../../components/Loader';
 
 const Home = () => {
   const form = useRef();
@@ -26,6 +27,8 @@ const Home = () => {
     reply_to: "",
     message: ""
   });
+
+  const [loading, setLoading] = useState(false);
 
   const aboutRef = useRef();
   const workExpRef = useRef();
@@ -42,8 +45,9 @@ const Home = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     if (!formData?.from_name || !formData?.reply_to || !formData?.message) {
-      setNotDone(true)
+      setNotDone(true);
     } else {
+      setLoading(true);
       emailjs
         .sendForm(
           process.env.REACT_APP_SERVICE_ID,
@@ -53,9 +57,11 @@ const Home = () => {
         )
         .then(() => {
           setDone(true);
+          setLoading(false);
         },
           (error) => {
             console.log(error.text);
+            setLoading(false);
           }
         );
     }
@@ -228,7 +234,7 @@ const Home = () => {
                 <textarea name="message" className="user" placeholder="Enter Message..." value={formData?.message} onChange={handleChange} disabled={done || notDone} />
                 <div className='contact-me-send-btn-container'>
                   {notDone && <span className='not-done' >Please fill all the input fields!</span>}
-                  <Button type="submit" className="button" disabled={done} style={{ margin: notDone ? '18px auto 0px' : done ? '0px auto 18px' : "" }}>Send</Button>
+                  <Button type="submit" className="button" disabled={done || notDone} style={{ margin: notDone ? '18px auto 0px' : done ? '0px auto 18px' : "" }}>{loading ? <Loader /> : "Send"}</Button>
                   {done && <span className='done'>Thanks for contacting me!</span>}
                 </div>
               </form>

@@ -892,6 +892,10 @@ textarea {
   left: 8rem;
 }
 
+.loader {
+  color: white;
+}
+
 
 /* media queries */
 @media screen and (max-width: 492px) {
