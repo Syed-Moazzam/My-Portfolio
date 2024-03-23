@@ -16,7 +16,7 @@ export const projectsArray = [
     {
         img: realEstate,
         title: 'Real Estate App',
-        description: "This platform is your ultimate real estate companion, seamlessly connecting users to their dream properties with just a tap. With personalized profiles at your fingertips, effortlessly create listings for properties to rent or sell across diverse categories. Whether you're on the hunt for your next home or seeking the perfect investment opportunity, our intuitive search feature ensures you find exactly what you're looking for. Welcome to the future of real estate, where convenience meets choice in the palm of your hand.",
+        description: "This platform is your ultimate real estate companion, seamlessly connecting users to their dream properties with just a tap. With personalized profiles at your fingertips, effortlessly create listings for properties to rent or sell across diverse categories. Whether you're on the hunt for your next home or seeking the perfect investment opportunity, our intuitive search feature ensures you find exactly what you're looking for. Welcome to the future of real estate, where convenience meets choice in the palm of your hand, transforming property transactions.",
         ghLink: 'https://github.com/Syed-Moazzam/MERN-Real-Estate-App',
         demoLink: 'https://mern-real-estate-app-kbi6.onrender.com/'
     },
@@ -30,7 +30,7 @@ export const projectsArray = [
     {
         img: netflix,
         title: 'Real-Time Chat App',
-        description: "Real-time chat app is crafted using MERN stack and integrated with web sockets for instant messaging. Connect effortlessly with friends, colleagues, or loved ones, engaging in lively conversations and sharing moments in real-time. With a sleek and intuitive interface, navigating through this platform is a breeze, ensuring seamless interaction across devices. This platform is developed with functionalities similar to WhatsApp and Messenger and users can communicate with each other instantly.",
+        description: "Real-time chat app is crafted using MERN stack and integrated with web sockets for instant messaging. Connect effortlessly with friends, colleagues, or loved ones, engaging in lively conversations and sharing moments in real-time. With a sleek and intuitive interface, navigating through this platform is a breeze, ensuring seamless interaction across devices. This platform is developed with functionalities similar to WhatsApp and Messenger and users can communicate with each other instantly. Boost your connectivity and productivity on the go.",
         ghLink: 'https://github.com/Syed-Moazzam/MERN-Real-Estate-App',
         demoLink: 'https://mern-real-estate-app-kbi6.onrender.com/'
     },
@@ -44,7 +44,7 @@ export const projectsArray = [
     {
         img: foodOrdering,
         title: 'Food Ordering App',
-        description: "'Flavor Fusion Lab' – an exquisite  and user friendly restaurant website meticulously crafted with HTML, CSS and JavaScript. Dive into a culinary journey like no other as you explore our enticing array of specialties, tantalizing your taste buds with every click. From delectable dishes to heartfelt reviews, our platform offers a seamless blend of elegance and functionality. Discover our popular menu items, learn about our passion for food in the about section, and effortlessly place orders to savor our heavenly creations.",
+        description: "'Flavor Fusion Lab' – an exquisite  and user friendly restaurant website meticulously crafted with HTML, CSS and JavaScript. Dive into a culinary journey like no other as you explore our enticing array of specialities, tantalizing your taste buds with every click. From delectable dishes to heartfelt reviews, our platform offers a seamless blend of elegance and functionality. Discover our popular menu items, learn about our passion for food in the about section, and effortlessly place orders to savor our heavenly creations. Let Flavor Fusion Lab guide your gastronomic adventures.",
         ghLink: 'https://github.com/Syed-Moazzam/Restaurant-Website-HTML-CSS-JS',
         demoLink: 'https://flavor-fusion-lab.vercel.app/'
     }

@@ -40,7 +40,7 @@ function Header({ sectionsRef }) {
       expand="md"
       className={headerColor ? "sticky" : "navbar"}
     >
-      <Container>
+      <Container className="navbar-container">
         <Navbar.Brand href="/" className="d-flex">
           <span className="navbar-my-name-logo">{"<Syed"}</span>&nbsp;
           <span className="navbar-my-name-logo">{"Moazzam Ahmed />"}</span>
@@ -62,7 +62,7 @@ function Header({ sectionsRef }) {
                 updateExpanded(false);
                 navigateToSection(aboutRef);
               }}>
-                <IoPersonSharp style={{ margin: "0px 1px 2.5px 0px" }} /> About
+                <IoPersonSharp style={{ margin: "0px 1px 2.5px 0px" }} /> <span>About</span>
               </Nav.Link>
             </Nav.Item>
 
@@ -74,7 +74,7 @@ function Header({ sectionsRef }) {
                   navigateToSection(workExpRef);
                 }}
               >
-                <FaBriefcase style={{ margin: "0px 1px 2.5px 0px" }} /> Work Experience
+                <FaBriefcase style={{ margin: "0px 1px 2.5px 0px" }} /> <span>Work Experience</span>
               </Nav.Link>
             </Nav.Item>
 
@@ -86,7 +86,7 @@ function Header({ sectionsRef }) {
                   navigateToSection(skillsetRef)
                 }}
               >
-                <GiSkills style={{ margin: "0px 1px 2.5px 0px" }} /> Skillset
+                <GiSkills style={{ margin: "0px 1px 2.5px 0px" }} /> <span>Skillset</span>
               </Nav.Link>
             </Nav.Item>
 
@@ -101,7 +101,7 @@ function Header({ sectionsRef }) {
                 <AiOutlineFundProjectionScreen
                   style={{ margin: "0px 1px 2.5px 0px" }}
                 />{" "}
-                Projects
+                <span>Projects</span>
               </Nav.Link>
             </Nav.Item>
 
@@ -113,7 +113,7 @@ function Header({ sectionsRef }) {
                   updateExpanded(false);
                 }}
               >
-                <CgFileDocument style={{ margin: "0px 1px 2.5px 0px" }} /> Resume
+                <CgFileDocument style={{ margin: "0px 1px 2.5px 0px" }} /> <span>Resume</span>
               </Nav.Link>
             </Nav.Item>
 
@@ -125,7 +125,7 @@ function Header({ sectionsRef }) {
                   navigateToSection(contactRef);
                 }}
               >
-                <AiOutlineContacts style={{ margin: "0px 1px 2.5px 0px" }} /> Contact Me
+                <AiOutlineContacts style={{ margin: "0px 1px 2.5px 0px" }} /> <span>Contact Me</span>
               </Nav.Link>
             </Nav.Item>
           </Nav>

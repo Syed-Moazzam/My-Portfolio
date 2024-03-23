@@ -41,10 +41,10 @@ const Footer = () => {
           </ul>
         </Col>
 
-        <Col md="4" className="footer-copywright">
+        <Col md="4" className="footer-copyright">
           <span>Dedicated to creating impactful solutions!</span>
         </Col>
-        <Col md="4" className="footer-copywright">
+        <Col md="4" className="footer-copyright">
           <span>Copyright © {year}</span>
         </Col>
         <Col md="4" className="footer-body">

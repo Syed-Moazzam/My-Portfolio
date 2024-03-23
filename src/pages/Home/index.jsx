@@ -217,11 +217,11 @@ const Home = () => {
       <section ref={contactRef}>
         <Container style={{ paddingTop: '100px' }} >
           <Row >
-            <Col md={7} className="c-left" >
+            <Col md={6} className="c-left" >
               <h1 >Get in Touch</h1>
               <h1 className="yellow">Contact me</h1>
             </Col>
-            <Col md={5} className="c-right">
+            <Col md={6} className="c-right">
               <form ref={form} onSubmit={sendEmail}>
                 <input type="text" name="from_name" className="user" placeholder="Name..." value={formData?.from_name} onChange={handleChange} disabled={done || notDone} />
                 <input type="email" name="reply_to" className="user" placeholder="Email..." value={formData?.reply_to} onChange={handleChange} disabled={done || notDone} />

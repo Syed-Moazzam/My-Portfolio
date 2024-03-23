@@ -20,7 +20,7 @@ const ProjectCard = (props) => {
         src={props.img}
         alt="card-img"
         style={{
-          height: "200px",
+          height: "fit-content",
           objectFit: "contain",
           alignSelf: "flex-start",
           borderRadius: "10%",
@@ -34,7 +34,7 @@ const ProjectCard = (props) => {
         }}
       >
         <Card.Title style={{ marginBottom: '14px' }}>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify", fontSize: "15px" }}>
+        <Card.Text style={{ textAlign: "justify", fontSize: "15px", height: '100%' }}>
           {props.description}
         </Card.Text>
         <Button
