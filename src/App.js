@@ -10,8 +10,7 @@ import Preloader from "./components/PreLoader"
 import ScrollToTop from "./components/ScrollToTop"
 import Home from "./pages/Home";
 
-import "./App.css";
-import "./style.css";
+import "./assets/styles/style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {

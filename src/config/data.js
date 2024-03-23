@@ -1,9 +1,9 @@
-import ecommerce from "../assets/projects/ecommerce.png";
-import netflix from "../assets/projects/netflix.png";
-import foodOrdering from "../assets/projects/food-ordering.png";
-import realEstate from "../assets/projects/real-estate.png";
-import tafsolIcon from '../assets/tafsol-icon.png';
-import ephluxIcon from '../assets/ephlux-icon.jpg';
+import ecommerce from "../assets/images/ecommerce.png";
+import netflix from "../assets/images/netflix.png";
+import foodOrdering from "../assets/images/food-ordering.png";
+import realEstate from "../assets/images/real-estate.png";
+import tafsolIcon from '../assets/images/tafsol-icon.png';
+import ephluxIcon from '../assets/images/ephlux-icon.jpg';
 
 export const projectsArray = [
     {

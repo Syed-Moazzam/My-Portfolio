@@ -33,7 +33,7 @@ const ProjectCard = (props) => {
           alignContent: 'space-between'
         }}
       >
-        <Card.Title style={{ marginBottom: '14px' }}>{props.title}</Card.Title>
+        <Card.Title style={{ marginBottom: '14px', textAlign: 'center' }}>{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify", fontSize: "15px", height: '100%' }}>
           {props.description}
         </Card.Text>

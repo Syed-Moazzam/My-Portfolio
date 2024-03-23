@@ -20,17 +20,17 @@ const ExperienceCard = ({ experience }) => {
                 transition: "all 0.4s ease 0s",
                 cursor: "pointer"
             }}
-            contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+            contentArrowStyle={{ borderRight: "7.5px solid rgb(89, 0, 190)" }}
             date={experience.date}
             iconStyle={{ background: experience.iconBg }}
             iconClassName="vertical-timeline-circular-box"
             icon={
-                < div >
+                <div>
                     <img
                         src={experience.icon}
                         alt={experience.company_name}
                     />
-                </div >
+                </div>
             }
         >
             <div>

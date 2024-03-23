@@ -32,7 +32,7 @@ button:focus {
   height: 100%;
   z-index: 999999;
   background-color: #0c0513;
-  background-image: url(./assets/pre.svg);
+  background-image: url(../images/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -164,6 +164,7 @@ button:focus {
 }
 
 .navbar-nav .nav-item a {
+  text-align: center;
   font-weight: 400;
   transition: all 0.3s ease-out 0s;
   position: relative;
@@ -254,7 +255,7 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./assets/home-bg.jpg);
+  background-image: var(--image-gradient), url(../images/home-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -265,6 +266,15 @@ button:focus {
   padding: 9rem 0 2rem !important;
   color: whitesmoke;
   text-align: left;
+}
+
+.row-of-home-content {
+  align-items: center;
+}
+
+.home-content-typewriter {
+  text-align: left;
+  padding: 35px 45px;
 }
 
 .heading {
@@ -293,7 +303,7 @@ button:focus {
   color: #7500fa !important;
 }
 
-.myAvtar {
+.myAvatar {
   justify-content: center !important;
   padding-top: 9em !important;
 }
@@ -302,7 +312,10 @@ button:focus {
   position: relative;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
-  /* background-image: var(--image-gradient), url('./assets/home-bg.jpg'); */
+}
+
+.row-of-home-about-section {
+  align-items: center;
 }
 
 .home-about-description {
@@ -310,6 +323,11 @@ button:focus {
   padding-top: 100px !important;
   padding-bottom: 20px !important;
   text-align: center;
+}
+
+.let-me-introduce-myself-heading {
+  font-size: 2.6em;
+  text-transform: uppercase;
 }
 
 .home-about-body {
@@ -830,7 +848,7 @@ button:focus {
   outline: none;
   border: 2px solid #40008a;
   border-radius: 8px;
-  font-size: 19px;
+  font-size: 18px;
   color: white
 }
 
@@ -876,7 +894,15 @@ textarea {
 
 
 /* media queries */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 492px) {
+  .home-content-typewriter {
+    margin-bottom: 3.6rem !important;
+  }
+
+  .home-about-body {
+    padding-top: 30px;
+  }
+
   .contact-form {
     padding: 0;
     flex-direction: column;
@@ -885,22 +911,35 @@ textarea {
   }
 
   .c-right .user {
-    width: 16rem;
-  }
-
-  .navbar-my-name-logo {
-    display: none;
+    width: 22rem;
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .navbar-my-name-logo {
+    display: none;
+  }
+
+  .home-content {
+    padding-top: 6rem !important;
+  }
+
+  .heading,
+  .heading-name {
+    font-size: 2em !important;
+  }
+
   .nav-link {
     padding: 0.7rem 1rem !important;
   }
 
+  .home-content-typewriter {
+    padding-top: 22px;
+    margin-bottom: 2rem;
+  }
+
   .Typewriter__wrapper {
-    font-size: 1.4em !important;
-    font-weight: 500 !important;
+    font-size: 1.7em !important;
     position: absolute !important;
   }
 
@@ -908,13 +947,12 @@ textarea {
     display: none !important;
   }
 
-  .myAvtar {
-    padding-top: 2em !important;
-    padding-bottom: 2em !important;
-  }
-
   .footer-copyright {
     text-align: center !important;
+  }
+
+  .footer-copyright span {
+    font-size: 1rem !important;
   }
 
   .footer-body {
@@ -959,9 +997,25 @@ textarea {
   .c-left {
     margin-bottom: 1.45rem;
   }
+
+  .contact-me-container {
+    padding-top: 50px !important;
+  }
+
+  .c-right .user {
+    font-size: 17px;
+  }
 }
 
 @media screen and (max-width: 992px) {
+  .let-me-introduce-myself-heading {
+    font-size: 2.3em !important;
+  }
+
+  .home-about-body {
+    font-size: 1.08em !important;
+  }
+
   .project-card {
     padding-top: 28px !important;
     padding-bottom: 28px !important;
@@ -972,13 +1026,35 @@ textarea {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .home-about-section {
+    padding-top: 10px !important;
+    padding-bottom: 28px !important;
+  }
+
+  .myAvatar {
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+    margin: auto;
+  }
+
+  .home-about-description {
+    padding-bottom: 5px !important;
+  }
+
+  .vertical-timeline-element-content .vertical-timeline-element-date {
+    display: block;
+    margin: auto;
+  }
+}
+
 @media screen and (max-width: 1400px) and (min-width: 768px) {
   .navbar-container {
     flex-direction: column;
   }
 
   .navbar-nav .nav-link {
-    padding: 0.5rem 0.8rem !important;
+    padding: 0.55rem 0.8rem !important;
     font-size: 17px !important;
     text-align: center;
   }

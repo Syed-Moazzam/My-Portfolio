@@ -1,13 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from '../../assets/about.png';
+import homeLogo from '../../assets/images/about.png';
 import Particle from '../../components/Particle';
 import TypeWriter from '../../components/TypeWriter';
 import Techstack from "../../components/Skillset/Techstack";
 import Toolstack from "../../components/Skillset/Toolstack";
 import Button from "react-bootstrap/Button";
 
-import LaptopImg from "../../assets/home-main.svg";
+import LaptopImg from "../../assets/images/home-main.svg";
 import Tilt from "react-parallax-tilt";
 
 import Header from '../../components/Header';
@@ -92,8 +92,8 @@ const Home = () => {
       <section ref={aboutRef}>
         <Container fluid className="home-section" id="home">
           <Container className="home-content">
-            <Row>
-              <Col md={7} className="home-header">
+            <Row className="row-of-home-content">
+              <Col md={12} lg={6} className="home-header">
                 <h1 style={{ paddingBottom: 15 }} className="heading">
                   Hi There!{" "}
                   <span className="wave" role="img" aria-labelledby="wave">
@@ -106,12 +106,12 @@ const Home = () => {
                   <strong className="main-name"> Syed Moazzam Ahmed</strong>
                 </h1>
 
-                <div style={{ padding: '35px 45px', textAlign: "left" }}>
+                <div className="home-content-typewriter">
                   <TypeWriter />
                 </div>
               </Col>
 
-              <Col md={5} style={{ paddingBottom: 20 }}>
+              <Col sm={9} md={8} lg={6} style={{ paddingBottom: '20px', margin: 'auto' }}>
                 <img
                   src={homeLogo}
                   alt="home pic"
@@ -127,10 +127,10 @@ const Home = () => {
       <section>
         <Container fluid className="home-about-section" id="about">
           <Container>
-            <Row>
-              <Col md={8} className="home-about-description">
-                <h1 style={{ fontSize: "2.6em" }}>
-                  LET ME <span className="yellow"> INTRODUCE </span> MYSELF
+            <Row className="row-of-home-about-section">
+              <Col sm={12} md={12} lg={12} xl={6} className="home-about-description">
+                <h1 className='let-me-introduce-myself-heading'>
+                  Let Me<span className="yellow"> Introduce </span> Myself
                 </h1>
                 <p className="home-about-body">
                   Hi, my name is <b className="yellow">Syed Moazzam Ahmed </b>
@@ -149,7 +149,7 @@ const Home = () => {
                   ensuring seamless data management and optimization. With a dedication to staying abreast of industry trends and a passion for problem-solving, I am committed to delivering high-quality software solutions tailored to meet the unique needs of each project. Explore my portfolio to discover my expertise and accomplishments in the realm of software engineering.
                 </p>
               </Col>
-              <Col md={4} className="myAvtar">
+              <Col sm={9} md={8} lg={7} xl={6} className="myAvatar">
                 <Tilt>
                   <img src={LaptopImg} className="img-fluid" alt="avatar" />
                 </Tilt>
@@ -179,7 +179,7 @@ const Home = () => {
             <Techstack />
 
             <h1 className="tools-used-heading">
-              <strong className="yellow">Tools</strong> I use
+              <strong className="yellow">Tools</strong> I Use
             </h1>
             <Toolstack />
           </Container>
@@ -215,7 +215,7 @@ const Home = () => {
       </section>
 
       <section ref={contactRef}>
-        <Container style={{ paddingTop: '100px' }} >
+        <Container style={{ paddingTop: '100px' }} className='contact-me-container' >
           <Row >
             <Col md={6} className="c-left" >
               <h1 >Get in Touch</h1>
@@ -223,9 +223,9 @@ const Home = () => {
             </Col>
             <Col md={6} className="c-right">
               <form ref={form} onSubmit={sendEmail}>
-                <input type="text" name="from_name" className="user" placeholder="Name..." value={formData?.from_name} onChange={handleChange} disabled={done || notDone} />
-                <input type="email" name="reply_to" className="user" placeholder="Email..." value={formData?.reply_to} onChange={handleChange} disabled={done || notDone} />
-                <textarea name="message" className="user" placeholder="Message..." value={formData?.message} onChange={handleChange} disabled={done || notDone} />
+                <input type="text" name="from_name" className="user" placeholder="Enter Your Name..." value={formData?.from_name} onChange={handleChange} disabled={done || notDone} />
+                <input type="email" name="reply_to" className="user" placeholder="Enter Your Email Address..." value={formData?.reply_to} onChange={handleChange} disabled={done || notDone} />
+                <textarea name="message" className="user" placeholder="Enter Message..." value={formData?.message} onChange={handleChange} disabled={done || notDone} />
                 <div className='contact-me-send-btn-container'>
                   {notDone && <span className='not-done' >Please fill all the input fields!</span>}
                   <Button type="submit" className="button" disabled={done} style={{ margin: notDone ? '18px auto 0px' : done ? '0px auto 18px' : "" }}>Send</Button>

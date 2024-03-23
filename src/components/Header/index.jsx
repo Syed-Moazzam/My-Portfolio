@@ -10,7 +10,7 @@ import {
 import { GiSkills } from "react-icons/gi"
 import { CgFileDocument } from "react-icons/cg";
 import { IoPersonSharp } from "react-icons/io5";
-import pdf from "../../assets/Moazzam.pdf";
+import pdf from "../../assets/resume/Moazzam.pdf";
 import { FaBriefcase } from "react-icons/fa";
 
 function Header({ sectionsRef }) {
