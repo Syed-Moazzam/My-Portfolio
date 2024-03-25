@@ -58,7 +58,7 @@ export const experiencesArray = [
         iconBg: "#383E56",
         date: "August 2023 - Present",
         points: [
-            "Currently working on a full-stack low code/no code product that has thousands of different users.",
+            "Currently working on a full stack low code/no code product that has thousands of different users.",
             "Coding and fixing bugs using React.js on the client-side and Node.js & Express.js on the server-side.",
             "Developing and testing new features for the product based on emerging client requirements.",
         ],

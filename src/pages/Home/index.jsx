@@ -147,7 +147,7 @@ const Home = () => {
                   with a robust background in
                   <b className="yellow"> Python, C++, and JavaScript, </b>
                   I bring a wealth of experience to the table. Currently serving as a
-                  <b className="yellow"> Full-Stack Software Engineer, </b>
+                  <b className="yellow"> Full Stack Software Engineer, </b>
                   I specialize in leveraging cutting-edge libraries and frameworks such as
                   <b className="yellow"> React, React Native, Next.js, Node.js, and Express.js </b>
                   to craft efficient and scalable solutions. My proficiency extends to diverse databases including
