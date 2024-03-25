@@ -57,7 +57,7 @@ const ExperienceCard = ({ experience }) => {
     );
 };
 
-const Experience = () => {
+const WorkExperience = () => {
     return (
         <>
             <div className='mt-20 flex flex-col'>
@@ -74,4 +74,4 @@ const Experience = () => {
     );
 };
 
-export default Experience;
+export default WorkExperience;

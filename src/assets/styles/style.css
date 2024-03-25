@@ -827,7 +827,7 @@ button:focus {
   flex: 1;
 }
 
-.c-right>form {
+.c-right form {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -1007,7 +1007,7 @@ textarea {
   }
 
   .home-about-description {
-    padding-top: 90px !important;
+    padding-top: 92px !important;
   }
 
   .let-me-introduce-myself-heading {
