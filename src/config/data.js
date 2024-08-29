@@ -1,53 +1,47 @@
-import ecommerce from "../assets/images/ecommerce.png";
-import netflix from "../assets/images/netflix.png";
-import foodOrdering from "../assets/images/food-ordering.png";
-import realEstate from "../assets/images/real-estate.png";
+import ecommerceApp from "../assets/images/ecommerce-app.png";
+import blogsApp from "../assets/images/blogs-app.png";
+import foodOrderingApp from "../assets/images/food-ordering-app.png";
+import realEstateApp from "../assets/images/real-estate-app.png";
+import netflixApp from "../assets/images/netflix-app.png";
 import tafsolIcon from '../assets/images/tafsol-icon.png';
 import ephluxIcon from '../assets/images/ephlux-icon.jpg';
 
 export const projectsArray = [
     {
-        img: ecommerce,
+        img: ecommerceApp,
         title: 'E-Commerce App',
-        description: 'This comprehensive platform seamlessly integrates the realms of healthcare and technology, catering to the needs of doctors, patients, and administrators alike. From a diverse catalog of medicines to personalized consultations, users experience convenience at their fingertips. With a robust admin panel, administrators effortlessly manage products, appointments, and user interactions, ensuring streamlined operations. Embodying innovation and reliability, this app revolutionizes the healthcare industry, offering a seamless and secure solution.',
+        description: 'Fit Fables is a specialized e-commerce platform crafted with the MERN stack, designed to cater to the healthcare needs of users by offering a wide range of medicines, proteins, and wellness products. The app delivers a seamless, secure shopping experience, leveraging Redux for efficient state management and Cloudinary for fast media delivery. Fit Fables also includes a robust appointment booking system, enabling patients to consult with doctors directly through the app. The admin panel provides powerful tools for managing products, orders, and user interactions, ensuring smooth operations.',
         ghLink: 'https://github.com/Syed-Moazzam/MERN-E-Commerce-App',
         demoLink: 'https://mern-e-commerce-app-wsg3.onrender.com/'
     },
     {
-        img: realEstate,
-        title: 'Real Estate App',
-        description: "This platform is your ultimate real estate companion, seamlessly connecting users to their dream properties with just a tap. With personalized profiles at your fingertips, effortlessly create listings for properties to rent or sell across diverse categories. Whether you're on the hunt for your next home or seeking the perfect investment opportunity, our intuitive search feature ensures you find exactly what you're looking for. Welcome to the future of real estate, where convenience meets choice in the palm of your hand, transforming property transactions.",
-        ghLink: 'https://github.com/Syed-Moazzam/MERN-Real-Estate-App',
-        demoLink: 'https://mern-real-estate-app-kbi6.onrender.com/'
-    },
-    {
-        img: netflix,
-        title: 'Netflix Clone App',
-        description: "This app utilizes Reactjs for a user-friendly interface, mirroring the seamless experience of top streaming services with a vast library of movies and TV shows. Users effortlessly browse, search, and watch content. With personalized recommendations and profiles, our platform ensures an immersive entertainment experience. Emphasizing responsiveness and intuitive design, our platform guarantees exceptional viewing across all devices, while effortless sharing enhances the vibrant discovery of captivating content, enriching the viewing experience for all.",
-        ghLink: 'https://github.com/Syed-Moazzam/Netflix-Clone-App',
-        demoLink: 'https://react-netflix-replica.vercel.app/'
-    },
-    {
-        img: netflix,
-        title: 'Real-Time Chat App',
-        description: "Real-time chat app is crafted using MERN stack and integrated with web sockets for instant messaging. Connect effortlessly with friends, colleagues, or loved ones, engaging in lively conversations and sharing moments in real-time. With a sleek and intuitive interface, navigating through this platform is a breeze, ensuring seamless interaction across devices. This platform is developed with functionalities similar to WhatsApp and Messenger and users can communicate with each other instantly. Boost your connectivity and productivity on the go.",
-        ghLink: 'https://github.com/Syed-Moazzam/MERN-Real-Estate-App',
-        demoLink: 'https://mern-real-estate-app-kbi6.onrender.com/'
-    },
-    {
-        img: netflix,
+        img: blogsApp,
         title: 'Blogs App',
-        description: 'This platform features a responsive interface built with Reactjs and CSS, allowing users to easily manage their profiles and posts through CRUD operations. The option to follow other users and interact with their posts (like or dislike) is also available, with suggestions for new users to follow. Users can only view posts from their followed users and can only engage in chat with those they follow. The backend is powered by Nodejs and Expressjs server, while MongoDB is utilized as the database. Dive into a vibrant blogging community, where inspiration flows freely.',
+        description: 'StoryStreamline is a responsive platform built with the MERN stack, utilizing React, React-Bootstrap, and CSS to deliver a user-friendly interface. Users can manage profiles, create and edit blogs across categories such as sports, music, movies, technology, and fashion, and comment on posts when logged in. The app ensures seamless post viewing and interaction through comments while offering efficient content management for admins. Powered by Node.js and Express.js, the platform uses MongoDB for data storage, Redux Toolkit for state management, Cloudinary for image handling, and Nodemailer for user-admin communication.',
         ghLink: 'https://github.com/Syed-Moazzam/MERN-Blogs-App',
         demoLink: 'https://mern-e-commerce-app-wsg3.onrender.com/'
     },
     {
-        img: foodOrdering,
+        img: foodOrderingApp,
         title: 'Food Ordering App',
-        description: "'Flavor Fusion Lab' – an exquisite  and user friendly restaurant website meticulously crafted with HTML, CSS and JavaScript. Dive into a culinary journey like no other as you explore our enticing array of specialities, tantalizing your taste buds with every click. From delectable dishes to heartfelt reviews, our platform offers a seamless blend of elegance and functionality. Discover our popular menu items, learn about our passion for food in the about section, and effortlessly place orders to savor our heavenly creations. Let Flavor Fusion Lab guide your gastronomic adventures.",
+        description: 'Tomato is a food ordering application developed using the MERN stack, featuring client and admin panels. The admin panel enables administrators to add food items, track inventory, view order histories, and update order statuses, including processing, out for delivery, and delivered. The client panel allows users to browse and order from a diverse menu, with categories like Salad, Rolls, Desserts, Sandwich, Cake, Pure Veg, Pasta, and Noodles. The application integrates Stripe for secure payments, Context API for state management, and Nodemailer for seamless communication between users and the admin.',
         ghLink: 'https://github.com/Syed-Moazzam/Restaurant-Website-HTML-CSS-JS',
         demoLink: 'https://flavor-fusion-lab.vercel.app/'
-    }
+    },
+    {
+        img: realEstateApp,
+        title: 'Real Estate App',
+        description: "PropertyPulse is a real estate application created using the MERN stack, allowing users to view, create, and search property listings efficiently. The app utilizes Firebase Storage for secure image handling, enabling high-quality uploads and storage. Tailwind CSS is employed for a clean and responsive design, while Redux Toolkit handles global state management, ensuring consistent data flow across the app. Users can explore detailed property listings, filter searches by location, price, and other criteria, and manage their own listings directly within the platform for an optimized user experience.",
+        ghLink: 'https://github.com/Syed-Moazzam/MERN-Real-Estate-App',
+        demoLink: 'https://mern-real-estate-app-kbi6.onrender.com/'
+    },
+    {
+        img: netflixApp,
+        title: 'Netflix Clone App',
+        description: "This Netflix clone is developed using React and Styled Components, providing a modern and responsive user interface. Firebase Authentication is integrated to manage secure user sign-ups and logins. Users can explore a vast library of TV shows and movies, adding their preferred titles to a personalized list for easy access. The application employs Redux for efficient state management, ensuring a smooth and consistent user experience. Whether browsing through genres or searching for specific content, the app delivers a seamless and familiar experience, closely mirroring the original Netflix platform.",
+        ghLink: 'https://github.com/Syed-Moazzam/Netflix-Clone-App',
+        demoLink: 'https://react-netflix-replica.vercel.app/'
+    },
 ];
 
 export const experiencesArray = [
