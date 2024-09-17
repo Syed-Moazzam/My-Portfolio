@@ -1062,7 +1062,7 @@ textarea {
 
 @media screen and (max-width: 492px) {
   .navbar {
-    padding: 1rem !important;
+    padding: 1rem 1.3rem !important;
   }
 
   .home-about-body {
