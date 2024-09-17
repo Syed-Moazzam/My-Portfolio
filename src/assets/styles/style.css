@@ -84,7 +84,7 @@ button:focus {
 .navbar {
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
-  padding: 0.3rem 2rem !important;
+  padding: 0.5rem 2rem !important;
   font-size: 1.2rem !important;
 }
 
@@ -102,8 +102,8 @@ button:focus {
 .navbar-toggler span {
   display: block !important;
   background-color: #7500fa !important;
-  height: 4px !important;
-  width: 27px !important;
+  height: 3px !important;
+  width: 25px !important;
   margin-top: 5px !important;
   margin-bottom: 5px !important;
   transform: rotate(0deg) !important;
@@ -894,24 +894,83 @@ textarea {
 
 
 /* media queries */
-@media screen and (max-width: 492px) {
-  .home-about-body {
-    padding-top: 30px;
-  }
-
-  .contact-form {
-    padding: 0;
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+  .navbar-container {
     flex-direction: column;
-    gap: 5rem;
-    height: 40rem;
   }
 
-  .c-right .user {
-    width: 22rem;
+  .navbar-nav .nav-link {
+    padding: 0.55rem 0.8rem !important;
+    font-size: 17px !important;
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link span {
+    display: inline-block;
+  }
+
+  .navbar-my-name-logo {
+    font-size: 20px;
+    padding-top: 8px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .home-about-section {
+    padding-top: 10px !important;
+    padding-bottom: 28px !important;
+  }
+
+  .myAvatar {
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+    margin: auto;
+  }
+
+  .home-about-description {
+    padding-bottom: 5px !important;
+  }
+
+  .vertical-timeline-element-content .vertical-timeline-element-date {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .home-content-typewriter {
+    height: 138px;
+  }
+
+  .home-about-description {
+    padding-top: 92px !important;
+  }
+
+  .let-me-introduce-myself-heading {
+    font-size: 2.3em !important;
+  }
+
+  .home-about-body {
+    font-size: 1.08em !important;
+  }
+
+  .project-card {
+    padding-top: 28px !important;
+    padding-bottom: 28px !important;
+  }
+
+  .footer-copyright span {
+    font-size: 1.1rem;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .navbar-container {
+    max-width: 100% !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
   .navbar-my-name-logo {
     display: none;
   }
@@ -1001,72 +1060,23 @@ textarea {
   }
 }
 
-@media screen and (max-width: 992px) {
-  .home-content-typewriter {
-    height: 138px;
-  }
-
-  .home-about-description {
-    padding-top: 92px !important;
-  }
-
-  .let-me-introduce-myself-heading {
-    font-size: 2.3em !important;
+@media screen and (max-width: 492px) {
+  .navbar {
+    padding: 1rem !important;
   }
 
   .home-about-body {
-    font-size: 1.08em !important;
+    padding-top: 30px;
   }
 
-  .project-card {
-    padding-top: 28px !important;
-    padding-bottom: 28px !important;
-  }
-
-  .footer-copyright span {
-    font-size: 1.1rem;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .home-about-section {
-    padding-top: 10px !important;
-    padding-bottom: 28px !important;
-  }
-
-  .myAvatar {
-    padding-top: 1em !important;
-    padding-bottom: 1em !important;
-    margin: auto;
-  }
-
-  .home-about-description {
-    padding-bottom: 5px !important;
-  }
-
-  .vertical-timeline-element-content .vertical-timeline-element-date {
-    display: block;
-    margin: auto;
-  }
-}
-
-@media screen and (max-width: 1400px) and (min-width: 768px) {
-  .navbar-container {
+  .contact-form {
+    padding: 0;
     flex-direction: column;
+    gap: 5rem;
+    height: 40rem;
   }
 
-  .navbar-nav .nav-link {
-    padding: 0.55rem 0.8rem !important;
-    font-size: 17px !important;
-    text-align: center;
-  }
-
-  .navbar-nav .nav-link span {
-    display: inline-block;
-  }
-
-  .navbar-my-name-logo {
-    font-size: 20px;
-    padding-top: 8px;
+  .c-right .user {
+    width: 22rem;
   }
 }
