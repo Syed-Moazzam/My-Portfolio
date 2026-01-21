@@ -3,8 +3,10 @@ import foodOrderingApp from "../assets/images/food-ordering-app.png";
 import blogsApp from "../assets/images/blogs-app.png";
 import realEstateApp from "../assets/images/real-estate-app.png";
 import netflixApp from "../assets/images/netflix-app.png";
-import tafsolIcon from '../assets/images/tafsol-icon.png';
 import ephluxIcon from '../assets/images/ephlux-icon.jpg';
+import ahoyIcon from '../assets/images/ahoy-icon.png';
+import centroxIcon from '../assets/images/centrox-icon.jpeg';
+import ianconIcon from '../assets/images/iancon-icon.jpeg';
 
 export const projectsArray = [
     {
@@ -46,27 +48,50 @@ export const projectsArray = [
 
 export const experiencesArray = [
     {
-        title: "Software Engineer",
-        company_name: "Ephlux",
-        icon: ephluxIcon,
+        title: "Senior Software Engineer",
+        company_name: "AHOY",
+        icon: ahoyIcon,
         iconBg: "#383E56",
-        date: "May 2023 - Present",
+        date: "Apr. 2025 - Present",
         points: [
-            "Currently working on a full stack low code/no code product that has thousands of different users.",
-            "Coding and fixing bugs using React.js on the client-side and Node.js & Express.js on the server-side.",
-            "Developing and testing new features for the product based on emerging client requirements.",
+            "Leading TradeSocial platform development, built cross-platform React Native mobile app from scratch and modernized legacy codebase, reducing technical debt by 40%.",
+            "Driving UI/UX modernization initiatives across the platform, increasing user satisfaction by 30% and reducing interaction friction by 25%.",
+            "Architected H2OTO IoT solution with LoRaWAN sensors, designing system architecture, data pipelines, and JSON schemas for 1,000+ real-time telemetry streams.",
+            "Conduct technical interviews for MERN and React Native roles; mentor junior developers across frontend and backend teams.",
         ],
     },
     {
-        title: "React.js Developer",
-        company_name: "Tafsol Technologies",
-        icon: tafsolIcon,
+        title: "Full Stack Software Engineer",
+        company_name: "Centrox AI",
+        icon: centroxIcon,
         iconBg: "#E6DEDD",
-        date: "October 2022 - April 2023",
+        date: "Nov. 2024 - May 2025",
         points: [
-            "Converted Adobe XD/Figma Designs to actual user interfaces.",
-            "Made websites responsive according to different web and mobile screen sizes.",
-            "Integrated REST APIs with websites and ensured the execution of every single feature according to the requirements."
+            "Led development of CreditBase platform using Next.js and TypeScript, enabling 100+ financial teams to parse, analyze, and compare complex legal documents 60% faster.",
+            "Delivered 4+ features for Pocket Mate AI mental health app, enhancing performance and user experience for 500+ daily active users.",
+            "Integrated RESTful APIs and fixed 40+ critical bugs across Next.js, NestJS, and MongoDB stack, increasing system uptime to 99.2% and reducing latency by 35%.",
         ],
-    }
+    },
+    {
+        title: "Associate Software Engineer",
+        company_name: "Ephlux",
+        icon: ephluxIcon,
+        iconBg: "#383E56",
+        date: "May 2023 - Oct. 2024",
+        points: [
+            "Maintained Swift no-code platform for 4,000+ enterprise users using React, Node.js, and Express.js, enhancing 5+ modules and improving UI load time by 35%.",
+            "Resolved 50+ complex platform issues across bi-weekly sprints, reducing ticket resolution time by 50%.",
+        ],
+    },
+    {
+        title: "Full Stack Developer Intern",
+        company_name: "IANCON",
+        icon: ianconIcon,
+        iconBg: "#E6DEDD",
+        date: "Sep. 2022 - Mar. 2023",
+        points: [
+            "Developed buyer and seller consoles for Noonhut's multi-vendor food delivery marketplace using React, enabling 100+ vendors to process 600+ daily orders.",
+            "Implemented Firebase authentication and real-time database, reducing checkout abandonment by 20%.",
+        ],
+    },
 ];

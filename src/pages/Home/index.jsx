@@ -152,15 +152,17 @@ const Home = () => {
                     <br />
                     As a
                     <b className="yellow"> Software Engineer </b>
-                    with a robust background in
-                    <b className="yellow"> Python, C++, and JavaScript, </b>
-                    I bring a wealth of experience to the table. Currently serving as a
-                    <b className="yellow"> Full Stack Software Engineer, </b>
+                    with more than 3 years of experience building scalable applications across
+                    <b className="yellow"> web, mobile, and cloud platforms, </b>
+                    I bring strong problem-solving skills with expertise in full-stack development and system architecture. Currently serving as a
+                    <b className="yellow"> Senior Software Engineer, </b>
                     I specialize in leveraging cutting-edge libraries and frameworks such as
-                    <b className="yellow"> React, React Native, Next.js, Node.js, and Express.js </b>
+                    <b className="yellow"> React, React Native, Next.js, Node.js, Express.js, and NestJS </b>
                     to craft efficient and scalable solutions. My proficiency extends to diverse databases including
-                    <b className="yellow"> MySQL, PostgreSQL, and MongoDB, </b>
-                    ensuring seamless data management and optimization. With a dedication to staying abreast of industry trends and a passion for problem-solving, I am committed to delivering high-quality software solutions tailored to meet the unique needs of each project. Explore my portfolio to discover my expertise and accomplishments in the realm of software engineering.
+                    <b className="yellow"> MySQL, PostgreSQL, MongoDB, and Firebase, </b>
+                    along with cloud platforms like
+                    <b className="yellow"> AWS, Microsoft Azure, and GCP. </b>
+                    With a track record of delivering high-impact solutions across fintech, health tech, and IoT domains, I am committed to building quality software tailored to meet the unique needs of each project.
                   </p>
                 </Zoom>
               </Col>
