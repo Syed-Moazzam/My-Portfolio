@@ -77,7 +77,7 @@ export const experiencesArray = [
         company_name: "Ephlux",
         icon: ephluxIcon,
         iconBg: "#383E56",
-        date: "May 2023 - Oct. 2024",
+        date: "Dec. 2021 - Nov. 2024",
         points: [
             "Maintained Swift no-code platform for 4,000+ enterprise users using React, Node.js, and Express.js, enhancing 5+ modules and improving UI load time by 35%.",
             "Resolved 50+ complex platform issues across bi-weekly sprints, reducing ticket resolution time by 50%.",
@@ -88,7 +88,7 @@ export const experiencesArray = [
         company_name: "IANCON",
         icon: ianconIcon,
         iconBg: "#E6DEDD",
-        date: "Sep. 2022 - Mar. 2023",
+        date: "May 2021 - Nov. 2021",
         points: [
             "Developed buyer and seller consoles for Noonhut's multi-vendor food delivery marketplace using React, enabling 100+ vendors to process 600+ daily orders.",
             "Implemented Firebase authentication and real-time database, reducing checkout abandonment by 20%.",

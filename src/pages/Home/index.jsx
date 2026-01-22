@@ -152,7 +152,7 @@ const Home = () => {
                     <br />
                     As a
                     <b className="yellow"> Software Engineer </b>
-                    with more than 3 years of experience building scalable applications across
+                    with more than 4 years of experience building scalable applications across
                     <b className="yellow"> web, mobile, and cloud platforms, </b>
                     I bring strong problem-solving skills with expertise in full-stack development and system architecture. Currently serving as a
                     <b className="yellow"> Senior Software Engineer, </b>
