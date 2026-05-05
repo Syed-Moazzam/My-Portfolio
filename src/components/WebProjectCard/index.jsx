@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
-const ProjectCard = (props) => {
+const WebProjectCard = (props) => {
   return (
     <Card
       className="project-card-view"
@@ -37,27 +37,31 @@ const ProjectCard = (props) => {
         <Card.Text style={{ textAlign: "justify", fontSize: "15px", height: '100%' }}>
           {props.description}
         </Card.Text>
-        <Button
-          variant="primary"
-          href={props.ghLink}
-          target="_blank"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            alignContent: "flex-end",
-            textAlign: "center",
-            position: "relative",
-            bottom: "0px",
-            fontSize: '15.5px',
-            fontWeight: '500'
-          }}
-        >
-          <BsGithub /> &nbsp;
-          GitHub
-        </Button>
-        {"\n"}
-        {"\n"}
+        {props.ghLink && (
+          <>
+            <Button
+              variant="primary"
+              href={props.ghLink}
+              target="_blank"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                alignContent: "flex-end",
+                textAlign: "center",
+                position: "relative",
+                bottom: "0px",
+                fontSize: '15.5px',
+                fontWeight: '500'
+              }}
+            >
+              <BsGithub /> &nbsp;
+              GitHub
+            </Button>
+            {"\n"}
+            {"\n"}
+          </>
+        )}
 
         {props.demoLink && (
           <Button
@@ -85,4 +89,4 @@ const ProjectCard = (props) => {
     </Card>
   );
 };
-export default ProjectCard;
+export default WebProjectCard;

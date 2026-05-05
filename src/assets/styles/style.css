@@ -32,7 +32,7 @@ button:focus {
   height: 100%;
   z-index: 999999;
   background-color: #0c0513;
-  background-image: url(../images/pre.svg);
+  background-image: url(../images/site-assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -251,7 +251,7 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(../images/home-bg.jpg);
+  background-image: var(--image-gradient), url(../images/site-assets/home-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -663,6 +663,81 @@ button:focus {
   font-weight: 500 !important;
   margin-bottom: 1.5rem;
   padding-top: 10px !important;
+}
+
+.projects-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px 0 8px;
+}
+
+.projects-tab-btn {
+  border: 1px solid #7500fa;
+  border-radius: 999px;
+  background: transparent;
+  color: white;
+  padding: 8px 22px;
+  font-size: 1rem;
+  transition: all 0.25s ease;
+}
+
+.projects-tab-btn.active,
+.projects-tab-btn:hover {
+  background: #7500fa;
+  color: #ffffff;
+}
+
+.project-tab-empty-state {
+  color: #d8d8ff;
+  text-align: center;
+  font-size: 1.05rem;
+  padding: 2rem 0 3rem;
+}
+
+.mobile-project-card-view {
+  gap: 6px;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.mobile-project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 10px 0;
+}
+
+.mobile-project-image {
+  width: auto;
+  height: 235px;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  border-radius: 8px;
+  border: 2px solid rgba(117, 0, 250, 0.75);
+}
+
+.mobile-project-buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.mobile-project-btn {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .mobile-project-image {
+    height: 200px;
+  }
 }
 
 

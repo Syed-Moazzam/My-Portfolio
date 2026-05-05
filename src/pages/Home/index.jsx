@@ -1,19 +1,20 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from '../../assets/images/about.png';
+import homeLogo from '../../assets/images/site-assets/about.png';
 import Particle from '../../components/Particle';
 import TypeWriter from '../../components/TypeWriter';
 import Techstack from "../../components/Skillset/Techstack";
 import Toolstack from "../../components/Skillset/Toolstack";
 import Button from "react-bootstrap/Button";
 
-import LaptopImg from "../../assets/images/home-main.svg";
+import LaptopImg from "../../assets/images/site-assets/home-main.svg";
 import Tilt from "react-parallax-tilt";
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import { projectsArray } from '../../config/data';
-import ProjectCard from '../../components/ProjectCard';
+import { mobileProjectsArray, webProjectsArray } from '../../config/data';
+import WebProjectCard from '../../components/WebProjectCard';
+import MobileProjectCard from '../../components/MobileProjectCard';
 import WorkExperience from '../../components/WorkExperience';
 import emailjs from "@emailjs/browser";
 import Loader from '../../components/Loader';
@@ -32,6 +33,7 @@ const Home = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  const [projectTab, setProjectTab] = useState("web");
 
   const aboutRef = useRef();
   const workExpRef = useRef();
@@ -77,6 +79,8 @@ const Home = () => {
     projectsRef,
     contactRef
   };
+
+  const filteredWebProjects = webProjectsArray.filter((project) => project?.type === projectTab);
 
   useEffect(() => {
     setTimeout(() => {
@@ -152,17 +156,19 @@ const Home = () => {
                     <br />
                     As a
                     <b className="yellow"> Software Engineer </b>
-                    with more than 4 years of experience building scalable applications across
-                    <b className="yellow"> web, mobile, and cloud platforms, </b>
-                    I bring strong problem-solving skills with expertise in full-stack development and system architecture. Currently serving as a
+                    with more than 5 years of experience building and maintaining scalable full-stack applications across
+                    <b className="yellow"> modern and legacy environments, </b>
+                    I have strong proficiency in
+                    <b className="yellow"> JavaScript, React, and Next.js </b>
+                    with hands-on experience integrating REST APIs, third-party services, and headless CMS platforms. Currently serving as a
                     <b className="yellow"> Senior Software Engineer, </b>
-                    I specialize in leveraging cutting-edge libraries and frameworks such as
+                    I specialize in leveraging frameworks such as
                     <b className="yellow"> React, React Native, Next.js, Node.js, Express.js, and NestJS </b>
-                    to craft efficient and scalable solutions. My proficiency extends to diverse databases including
+                    to craft reliable, scalable solutions with polished UI/UX. My proficiency extends to diverse databases including
                     <b className="yellow"> MySQL, PostgreSQL, MongoDB, and Firebase, </b>
                     along with cloud platforms like
                     <b className="yellow"> AWS, Microsoft Azure, and GCP. </b>
-                    With a track record of delivering high-impact solutions across fintech, health tech, and IoT domains, I am committed to building quality software tailored to meet the unique needs of each project.
+                    I have delivered high-impact solutions across fintech, health tech, and IoT domains with a focus on performance and reliability.
                   </p>
                 </Zoom>
               </Col>
@@ -217,17 +223,44 @@ const Home = () => {
               <p style={{ color: "white" }}>
                 Here are a few projects I've worked on recently.
               </p>
+              <div className="projects-tabs">
+                <button
+                  type="button"
+                  className={`projects-tab-btn ${projectTab === "web" ? "active" : ""}`}
+                  onClick={() => setProjectTab("web")}
+                >
+                  Web Apps
+                </button>
+                <button
+                  type="button"
+                  className={`projects-tab-btn ${projectTab === "mobile" ? "active" : ""}`}
+                  onClick={() => setProjectTab("mobile")}
+                >
+                  Mobile Apps
+                </button>
+              </div>
               <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-                {projectsArray.map((project, index) => {
+                {(projectTab === "web" ? filteredWebProjects : mobileProjectsArray).map((project, index) => {
                   return (
                     <Col sm={12} md={6} lg={6} xl={4} className="project-card" key={index}>
-                      <ProjectCard
-                        img={project?.img}
-                        title={project?.title}
-                        description={project?.description}
-                        ghLink={project?.ghLink}
-                        demoLink={project?.demoLink}
-                      />
+                      {projectTab === "web" ? (
+                        <WebProjectCard
+                          img={project?.img}
+                          title={project?.title}
+                          description={project?.description}
+                          ghLink={project?.ghLink}
+                          demoLink={project?.demoLink}
+                        />
+                      ) : (
+                        <MobileProjectCard
+                          title={project?.title}
+                          description={project?.description}
+                          images={project?.images}
+                          ghLink={project?.ghLink}
+                          appStoreLink={project?.appStoreLink}
+                          playStoreLink={project?.playStoreLink}
+                        />
+                      )}
                     </Col>
                   )
                 })}
