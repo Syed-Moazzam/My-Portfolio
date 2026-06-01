@@ -156,7 +156,7 @@ const Home = () => {
                     <br />
                     As a
                     <b className="yellow"> Software Engineer </b>
-                    with more than 5 years of experience building and maintaining scalable full-stack applications across
+                    {/* with more than 5 years of experience */} with experience building and maintaining scalable full-stack applications across
                     <b className="yellow"> modern and legacy environments, </b>
                     I have strong proficiency in
                     <b className="yellow"> JavaScript, React, and Next.js </b>

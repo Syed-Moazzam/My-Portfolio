@@ -16,10 +16,10 @@ import tradesocialMobile2 from "../assets/images/mobile-projects/tradesocial-2.p
 import tradesocialMobile3 from "../assets/images/mobile-projects/tradesocial-3.png";
 import h2otoMobile1 from "../assets/images/mobile-projects/h2oto-1.png";
 import h2otoMobile2 from "../assets/images/mobile-projects/h2oto-2.png";
-import ephluxIcon from '../assets/images/company-assets/ephlux-icon.jpg';
+// import ephluxIcon from '../assets/images/company-assets/ephlux-icon.jpg';
 import ahoyIcon from '../assets/images/company-assets/ahoy-icon.png';
-import centroxIcon from '../assets/images/company-assets/centrox-icon.jpeg';
-import ianconIcon from '../assets/images/company-assets/iancon-icon.jpeg';
+// import centroxIcon from '../assets/images/company-assets/centrox-icon.jpeg';
+// import ianconIcon from '../assets/images/company-assets/iancon-icon.jpeg';
 
 export const webProjectsArray = [
     {
@@ -156,38 +156,38 @@ export const experiencesArray = [
             "Conduct technical interviews for MERN and React Native roles; mentor junior developers across frontend and backend teams.",
         ],
     },
-    {
-        title: "Full Stack Software Engineer",
-        company_name: "Centrox AI",
-        icon: centroxIcon,
-        iconBg: "#E6DEDD",
-        date: "Nov. 2024 - May 2025",
-        points: [
-            "Built CreditBase full-stack platform using Next.js and TypeScript, integrating REST APIs and third-party services while maintaining headless CMS-driven components for 100+ financial teams, improving processing speed by 60%.",
-            "Delivered 4+ features for Pocket Mate AI mental health app, enhancing performance and user experience for 500+ daily active users.",
-            "Integrated RESTful APIs and fixed 40+ critical bugs across Next.js, NestJS, and MongoDB stack, increasing system uptime to 99.2% and reducing latency by 35%.",
-        ],
-    },
-    {
-        title: "Associate Software Engineer",
-        company_name: "Ephlux",
-        icon: ephluxIcon,
-        iconBg: "#383E56",
-        date: "Dec. 2021 - Nov. 2024",
-        points: [
-            "Maintained Swift no-code platform for 4,000+ enterprise users using React, Node.js, and Express.js, working across modern and legacy frontend systems with HTML, CSS, and JavaScript to improve UI load time by 35%.",
-            "Resolved 50+ complex platform issues across bi-weekly sprints, reducing ticket resolution time by 50%.",
-        ],
-    },
-    {
-        title: "Full Stack Developer Intern",
-        company_name: "IANCON",
-        icon: ianconIcon,
-        iconBg: "#E6DEDD",
-        date: "May 2021 - Nov. 2021",
-        points: [
-            "Developed buyer and seller consoles for Noonhut's multi-vendor food delivery marketplace using React, enabling 100+ vendors to process 600+ daily orders.",
-            "Implemented Firebase authentication and real-time database, reducing checkout abandonment by 20%.",
-        ],
-    },
+    // {
+    //     title: "Full Stack Software Engineer",
+    //     company_name: "Centrox AI",
+    //     icon: centroxIcon,
+    //     iconBg: "#E6DEDD",
+    //     date: "Nov. 2024 - May 2025",
+    //     points: [
+    //         "Built CreditBase full-stack platform using Next.js and TypeScript, integrating REST APIs and third-party services while maintaining headless CMS-driven components for 100+ financial teams, improving processing speed by 60%.",
+    //         "Delivered 4+ features for Pocket Mate AI mental health app, enhancing performance and user experience for 500+ daily active users.",
+    //         "Integrated RESTful APIs and fixed 40+ critical bugs across Next.js, NestJS, and MongoDB stack, increasing system uptime to 99.2% and reducing latency by 35%.",
+    //     ],
+    // },
+    // {
+    //     title: "Associate Software Engineer",
+    //     company_name: "Ephlux",
+    //     icon: ephluxIcon,
+    //     iconBg: "#383E56",
+    //     date: "Dec. 2021 - Nov. 2024",
+    //     points: [
+    //         "Maintained Swift no-code platform for 4,000+ enterprise users using React, Node.js, and Express.js, working across modern and legacy frontend systems with HTML, CSS, and JavaScript to improve UI load time by 35%.",
+    //         "Resolved 50+ complex platform issues across bi-weekly sprints, reducing ticket resolution time by 50%.",
+    //     ],
+    // },
+    // {
+    //     title: "Full Stack Developer Intern",
+    //     company_name: "IANCON",
+    //     icon: ianconIcon,
+    //     iconBg: "#E6DEDD",
+    //     date: "May 2021 - Nov. 2021",
+    //     points: [
+    //         "Developed buyer and seller consoles for Noonhut's multi-vendor food delivery marketplace using React, enabling 100+ vendors to process 600+ daily orders.",
+    //         "Implemented Firebase authentication and real-time database, reducing checkout abandonment by 20%.",
+    //     ],
+    // },
 ];
