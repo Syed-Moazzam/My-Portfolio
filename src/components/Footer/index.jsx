@@ -14,7 +14,7 @@ const Footer = () => {
     <Container fluid className="footer">
       <Row>
         <Col md={12} className="footer-social-links-container">
-          <Zoom triggerOnce>
+          <Zoom>
             <h1>FIND ME ON</h1>
             <p>
               Please don't hesitate to reach out to me and <span className="yellow">connect.</span>
@@ -47,17 +47,17 @@ const Footer = () => {
         </Col>
 
         <Col md="4" className="footer-copyright">
-          <Zoom triggerOnce>
+          <Zoom>
             <span>Dedicated to creating impactful solutions!</span>
           </Zoom>
         </Col>
         <Col md="4" className="footer-copyright">
-          <Zoom triggerOnce>
+          <Zoom>
             <span>Copyright © {year}</span>
           </Zoom>
         </Col>
         <Col md="4" className="footer-body">
-          <Zoom triggerOnce>
+          <Zoom>
             <ul className="footer-icons">
               <li className="social-icons">
                 <a

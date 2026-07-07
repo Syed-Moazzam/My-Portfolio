@@ -1,14 +1,35 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { DiGit } from "react-icons/di";
+import { GiArtificialIntelligence } from "react-icons/gi";
 import { FaDocker } from "react-icons/fa";
-import { SiPostman, SiVisualstudiocode } from "react-icons/si";
+import { TbRobot } from "react-icons/tb";
+import {
+  SiGithubactions,
+  SiGrafana,
+  SiHelm,
+  SiKubernetes,
+  SiNginx,
+  SiOpenai,
+  SiPrometheus,
+  SiTerraform,
+} from "react-icons/si";
 
 const TOOL_ITEMS = [
-  { Icon: SiVisualstudiocode, name: "VS Code" },
-  { Icon: SiPostman, name: "Postman" },
+  // DevOps & tools
   { Icon: FaDocker, name: "Docker" },
+  { Icon: SiKubernetes, name: "Kubernetes" },
+  { Icon: SiTerraform, name: "Terraform" },
+  { Icon: SiHelm, name: "Helm" },
+  { Icon: SiGithubactions, name: "GitHub Actions" },
+  { Icon: SiNginx, name: "Nginx" },
+  { Icon: SiPrometheus, name: "Prometheus" },
+  { Icon: SiGrafana, name: "Grafana" },
   { Icon: DiGit, name: "Git" },
+  // AI & GenAI
+  { Icon: SiOpenai, name: "OpenAI API" },
+  { Icon: TbRobot, name: "LangChain" },
+  { Icon: GiArtificialIntelligence, name: "Hugging Face" },
 ];
 
 const Toolstack = () => {

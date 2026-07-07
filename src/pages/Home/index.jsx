@@ -107,7 +107,7 @@ const Home = () => {
           <Container className="home-content">
             <Row className="row-of-home-content">
               <Col md={12} lg={6} className="home-header">
-                <Zoom triggerOnce>
+                <Zoom>
                   <h1 style={{ paddingBottom: 15 }} className="heading">
                     Hi There!{" "}
                     <span className="wave" role="img" aria-labelledby="wave">
@@ -127,7 +127,7 @@ const Home = () => {
               </Col>
 
               <Col sm={9} md={8} lg={6} style={{ paddingBottom: '20px', margin: 'auto' }}>
-                <Zoom triggerOnce>
+                <Zoom>
                   <img
                     src={homeLogo}
                     alt="home pic"
@@ -146,7 +146,7 @@ const Home = () => {
           <Container>
             <Row className="row-of-home-about-section">
               <Col sm={12} md={12} lg={12} xl={6} className="home-about-description">
-                <Zoom triggerOnce>
+                <Zoom>
                   <h1 className='let-me-introduce-myself-heading'>
                     Let Me<span className="yellow"> Introduce </span> Myself
                   </h1>
@@ -156,11 +156,11 @@ const Home = () => {
                     <br />
                     As a
                     <b className="yellow"> Software Engineer </b>
-                    {/* with more than 5 years of experience */} with experience building and maintaining scalable full-stack applications across
-                    <b className="yellow"> modern and legacy environments, </b>
+                    {/* with more than 4 years of experience */} with experience building scalable applications across
+                    <b className="yellow"> web, mobile, and cloud platforms, </b>
                     I have strong proficiency in
                     <b className="yellow"> JavaScript, React, and Next.js </b>
-                    with hands-on experience integrating REST APIs, third-party services, and headless CMS platforms. Currently serving as a
+                    with expertise in full-stack development, DevOps, AI/GenAI integration, and system architecture. Currently serving as a
                     <b className="yellow"> Senior Software Engineer, </b>
                     I specialize in leveraging frameworks such as
                     <b className="yellow"> React, React Native, Next.js, Node.js, Express.js, and NestJS </b>
@@ -168,12 +168,12 @@ const Home = () => {
                     <b className="yellow"> MySQL, PostgreSQL, MongoDB, and Firebase, </b>
                     along with cloud platforms like
                     <b className="yellow"> AWS, Microsoft Azure, and GCP. </b>
-                    I have delivered high-impact solutions across fintech, health tech, and IoT domains with a focus on performance and reliability.
+                    I have delivered high-impact solutions across fintech, health tech, and travel tech domains with a focus on performance and reliability.
                   </p>
                 </Zoom>
               </Col>
               <Col sm={9} md={8} lg={7} xl={6} className="myAvatar">
-                <Zoom triggerOnce>
+                <Zoom>
                   <Tilt>
                     <img src={LaptopImg} className="img-fluid" alt="avatar" />
                   </Tilt>
@@ -187,10 +187,12 @@ const Home = () => {
       <section ref={workExpRef}>
         <Container fluid className="work-experience-section">
           <Container>
-            <h1 className="work-experience-heading">
-              Work <strong className="yellow">Experience</strong>
-            </h1>
-            <WorkExperience />
+            <Zoom>
+              <h1 className="work-experience-heading">
+                Work <strong className="yellow">Experience</strong>
+              </h1>
+              <WorkExperience />
+            </Zoom>
           </Container>
         </Container>
       </section>
@@ -198,7 +200,7 @@ const Home = () => {
       <section ref={skillsetRef}>
         <Container fluid className="skillset-section">
           <Container>
-            <Zoom triggerOnce>
+            <Zoom>
               <h1 className="skillset-heading">
                 Professional <strong className="yellow">Skillset </strong>
               </h1>
@@ -216,7 +218,7 @@ const Home = () => {
       <section ref={projectsRef}>
         <Container fluid className="project-section">
           <Container>
-            <Zoom triggerOnce>
+            <Zoom>
               <h1 className="project-heading">
                 Recent Top <strong className="yellow">Works </strong>
               </h1>
@@ -274,13 +276,13 @@ const Home = () => {
         <Container style={{ paddingTop: '100px' }} className='contact-me-container' >
           <Row>
             <Col md={6} className="c-left" >
-              <Zoom triggerOnce>
+              <Zoom>
                 <h1 >Get in Touch</h1>
                 <h1 className="yellow">Contact me</h1>
               </Zoom>
             </Col>
             <Col md={6} className="c-right">
-              <Zoom triggerOnce style={{ width: '100%' }}>
+              <Zoom style={{ width: '100%' }}>
                 <form ref={form} onSubmit={sendEmail}>
                   <input type="text" name="from_name" className="user" placeholder="Enter Your Name..." value={formData?.from_name} onChange={handleChange} disabled={done || notDone} autoComplete="off" />
                   <input type="email" name="reply_to" className="user" placeholder="Enter Your Email Address..." value={formData?.reply_to} onChange={handleChange} disabled={done || notDone} autoComplete="off" />

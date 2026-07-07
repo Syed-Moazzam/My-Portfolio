@@ -1,53 +1,57 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { BsBootstrapFill } from "react-icons/bs";
 import { DiNodejs, DiReact } from "react-icons/di";
 import { TbBrandReactNative } from "react-icons/tb";
-import { FaAws, FaCss3Alt } from "react-icons/fa";
+import { FaAws, FaCss3Alt, FaJava } from "react-icons/fa";
 import { IoLogoFirebase } from "react-icons/io5";
 import {
-  SiAntdesign,
-  SiChakraui,
   SiExpress,
-  SiGithubactions,
   SiHtml5,
   SiJavascript,
-  SiMaterialui,
+  SiLaravel,
   SiMongodb,
+  SiMysql,
   SiNestjs,
   SiNextdotjs,
+  SiPhp,
   SiPostgresql,
-  SiRedux,
+  SiPython,
+  SiSupabase,
   SiTypescript,
+  SiAmazondynamodb,
+  SiMicrosoftazure,
+  SiGooglecloud,
 } from "react-icons/si";
 
-/** Order: frontend → backend → mobile → databases → cloud / DevOps */
+/** Order: languages → frontend/backend → mobile → databases → cloud */
 const TECH_ITEMS = [
-  // Frontend
-  { Icon: SiHtml5, name: "HTML5" },
-  { Icon: FaCss3Alt, name: "CSS3" },
+  // Languages
   { Icon: SiJavascript, name: "JavaScript" },
   { Icon: SiTypescript, name: "TypeScript" },
+  { Icon: SiPython, name: "Python" },
+  { Icon: FaJava, name: "Java" },
+  { Icon: SiPhp, name: "PHP" },
+  // Technologies
+  { Icon: SiHtml5, name: "HTML5" },
+  { Icon: FaCss3Alt, name: "CSS3" },
   { Icon: DiReact, name: "React" },
+  { Icon: TbBrandReactNative, name: "React Native" },
   { Icon: SiNextdotjs, name: "Next.js" },
-  { Icon: SiRedux, name: "Redux" },
-  { Icon: SiChakraui, name: "Chakra UI" },
-  { Icon: SiMaterialui, name: "Material UI" },
-  { Icon: SiAntdesign, name: "Ant Design" },
-  { Icon: BsBootstrapFill, name: "Bootstrap" },
-  // Backend
   { Icon: DiNodejs, name: "Node.js" },
   { Icon: SiExpress, name: "Express" },
   { Icon: SiNestjs, name: "NestJS" },
-  // Mobile
-  { Icon: TbBrandReactNative, name: "React Native" },
-  // Databases / data
-  { Icon: SiPostgresql, name: "PostgreSQL" },
+  { Icon: SiLaravel, name: "Laravel" },
+  // Databases
   { Icon: SiMongodb, name: "MongoDB" },
+  { Icon: SiPostgresql, name: "PostgreSQL" },
+  { Icon: SiMysql, name: "MySQL" },
+  { Icon: SiAmazondynamodb, name: "DynamoDB" },
   { Icon: IoLogoFirebase, name: "Firebase" },
-  // Cloud / DevOps
+  { Icon: SiSupabase, name: "Supabase" },
+  // Cloud platforms
   { Icon: FaAws, name: "AWS" },
-  { Icon: SiGithubactions, name: "GitHub Actions" },
+  { Icon: SiMicrosoftazure, name: "Azure" },
+  { Icon: SiGooglecloud, name: "GCP" },
 ];
 
 const Techstack = () => {

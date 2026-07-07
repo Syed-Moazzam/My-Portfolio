@@ -16,10 +16,10 @@ import tradesocialMobile2 from "../assets/images/mobile-projects/tradesocial-2.p
 import tradesocialMobile3 from "../assets/images/mobile-projects/tradesocial-3.png";
 import h2otoMobile1 from "../assets/images/mobile-projects/h2oto-1.png";
 import h2otoMobile2 from "../assets/images/mobile-projects/h2oto-2.png";
-// import ephluxIcon from '../assets/images/company-assets/ephlux-icon.jpg';
+import ephluxIcon from '../assets/images/company-assets/ephlux-icon.jpg';
 import ahoyIcon from '../assets/images/company-assets/ahoy-icon.png';
-// import centroxIcon from '../assets/images/company-assets/centrox-icon.jpeg';
-// import ianconIcon from '../assets/images/company-assets/iancon-icon.jpeg';
+import centroxIcon from '../assets/images/company-assets/centrox-icon.jpeg';
+import ianconIcon from '../assets/images/company-assets/iancon-icon.jpeg';
 
 export const webProjectsArray = [
     {
@@ -150,44 +150,44 @@ export const experiencesArray = [
         iconBg: "#383E56",
         date: "Apr. 2025 - Present",
         points: [
-            "Leading TradeSocial platform development, built cross-platform React Native mobile app from scratch and modernized legacy codebase, reducing technical debt by 40%.",
-            "Implemented responsive, mobile-first UI features across React and Next.js applications, integrating third-party APIs and improving cross-browser compatibility, increasing user satisfaction by 30%.",
-            "Architected H2OTO IoT solution with LoRaWAN sensors, designing system architecture, data pipelines, and JSON schemas for 1,000+ real-time telemetry streams.",
+            "Leading development of Al Rais's cross-platform mobile app using React Native, building core modules including hotels, flights, activities, bookings, cart, and account with end-to-end RESTful API integrations.",
+            "Led TradeSocial platform development, built cross-platform React Native mobile app from scratch and modernized the legacy web app, reducing technical debt by 40%.",
+            "Drove UI/UX modernization initiatives across the platform, increasing user satisfaction by 30% and reducing interaction friction by 25%.",
             "Conduct technical interviews for MERN and React Native roles; mentor junior developers across frontend and backend teams.",
         ],
     },
-    // {
-    //     title: "Full Stack Software Engineer",
-    //     company_name: "Centrox AI",
-    //     icon: centroxIcon,
-    //     iconBg: "#E6DEDD",
-    //     date: "Nov. 2024 - May 2025",
-    //     points: [
-    //         "Built CreditBase full-stack platform using Next.js and TypeScript, integrating REST APIs and third-party services while maintaining headless CMS-driven components for 100+ financial teams, improving processing speed by 60%.",
-    //         "Delivered 4+ features for Pocket Mate AI mental health app, enhancing performance and user experience for 500+ daily active users.",
-    //         "Integrated RESTful APIs and fixed 40+ critical bugs across Next.js, NestJS, and MongoDB stack, increasing system uptime to 99.2% and reducing latency by 35%.",
-    //     ],
-    // },
-    // {
-    //     title: "Associate Software Engineer",
-    //     company_name: "Ephlux",
-    //     icon: ephluxIcon,
-    //     iconBg: "#383E56",
-    //     date: "Dec. 2021 - Nov. 2024",
-    //     points: [
-    //         "Maintained Swift no-code platform for 4,000+ enterprise users using React, Node.js, and Express.js, working across modern and legacy frontend systems with HTML, CSS, and JavaScript to improve UI load time by 35%.",
-    //         "Resolved 50+ complex platform issues across bi-weekly sprints, reducing ticket resolution time by 50%.",
-    //     ],
-    // },
-    // {
-    //     title: "Full Stack Developer Intern",
-    //     company_name: "IANCON",
-    //     icon: ianconIcon,
-    //     iconBg: "#E6DEDD",
-    //     date: "May 2021 - Nov. 2021",
-    //     points: [
-    //         "Developed buyer and seller consoles for Noonhut's multi-vendor food delivery marketplace using React, enabling 100+ vendors to process 600+ daily orders.",
-    //         "Implemented Firebase authentication and real-time database, reducing checkout abandonment by 20%.",
-    //     ],
-    // },
+    {
+        title: "Software Engineer",
+        company_name: "Centrox AI",
+        icon: centroxIcon,
+        iconBg: "#E6DEDD",
+        date: "Nov. 2024 - May 2025",
+        points: [
+            "Led development of CreditBase platform using Next.js and TypeScript, enabling 100+ financial teams to parse, analyze, and compare complex legal documents 60% faster.",
+            "Delivered 4+ features for Pocket Mate AI mental health app, enhancing performance and user experience for 500+ daily active users.",
+            "Integrated RESTful APIs and fixed 40+ critical bugs across Next.js, NestJS, and MongoDB stack, increasing system uptime to 99.2% and reducing latency by 35%.",
+        ],
+    },
+    {
+        title: "Associate Software Engineer",
+        company_name: "Ephlux",
+        icon: ephluxIcon,
+        iconBg: "#383E56",
+        date: "Dec. 2023 - Mar. 2024",
+        points: [
+            "Maintained Swift no-code platform for 4,000+ enterprise users using React, Node.js, and Express.js, enhancing 5+ modules and improving UI load time by 35%.",
+            "Resolved 20+ complex platform issues across bi-weekly sprints, reducing ticket resolution time by 50%.",
+        ],
+    },
+    {
+        title: "Junior Full Stack Developer",
+        company_name: "IANCON",
+        icon: ianconIcon,
+        iconBg: "#E6DEDD",
+        date: "Sep. 2021 - Oct. 2023",
+        points: [
+            "Developed buyer and seller consoles for Noonhut's multi-vendor food delivery marketplace using React, enabling 100+ vendors to process 500+ daily orders.",
+            "Implemented Firebase authentication and real-time database, reducing checkout abandonment by 20%.",
+        ],
+    },
 ];
