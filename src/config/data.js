@@ -151,6 +151,7 @@ export const experiencesArray = [
         date: "Apr. 2025 - Present",
         points: [
             "Leading development of Al Rais's cross-platform mobile app using React Native, building core modules including hotels, flights, activities, bookings, cart, and account with end-to-end RESTful API integrations.",
+            "Architected serverless backend infrastructure on AWS for Al Rais, defining and deploying Lambda functions to handle core business logic and API workloads.",
             "Led TradeSocial platform development, built cross-platform React Native mobile app from scratch and modernized the legacy web app, reducing technical debt by 40%.",
             "Drove UI/UX modernization initiatives across the platform, increasing user satisfaction by 30% and reducing interaction friction by 25%.",
             "Conduct technical interviews for MERN and React Native roles; mentor junior developers across frontend and backend teams.",
@@ -163,8 +164,8 @@ export const experiencesArray = [
         iconBg: "#E6DEDD",
         date: "Nov. 2024 - May 2025",
         points: [
-            "Led development of CreditBase platform using Next.js and TypeScript, enabling 100+ financial teams to parse, analyze, and compare complex legal documents 60% faster.",
-            "Delivered 4+ features for Pocket Mate AI mental health app, enhancing performance and user experience for 500+ daily active users.",
+            "Led development of CreditBase platform using Next.js and TypeScript, integrating LLM-powered document parsing with the Anthropic Claude API to analyze and compare complex legal documents 60% faster.",
+            "Delivered 4+ features for Pocket Mate AI mental health app, leveraging OpenAI API and prompt engineering to enhance conversational performance and user experience for 500+ daily active users.",
             "Integrated RESTful APIs and fixed 40+ critical bugs across Next.js, NestJS, and MongoDB stack, increasing system uptime to 99.2% and reducing latency by 35%.",
         ],
     },
