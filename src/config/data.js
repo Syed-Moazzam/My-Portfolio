@@ -17,7 +17,7 @@ import tradesocialMobile3 from "../assets/images/mobile-projects/tradesocial-3.p
 import h2otoMobile1 from "../assets/images/mobile-projects/h2oto-1.png";
 import h2otoMobile2 from "../assets/images/mobile-projects/h2oto-2.png";
 import ephluxIcon from '../assets/images/company-assets/ephlux-icon.jpg';
-import ahoyIcon from '../assets/images/company-assets/ahoy-icon.png';
+import epicmetryIcon from '../assets/images/company-assets/epicmetry-icon.png';
 import centroxIcon from '../assets/images/company-assets/centrox-icon.jpeg';
 import ianconIcon from '../assets/images/company-assets/iancon-icon.jpeg';
 
@@ -145,16 +145,16 @@ export const mobileProjectsArray = [
 export const experiencesArray = [
     {
         title: "Senior Software Engineer",
-        company_name: "AHOY",
-        icon: ahoyIcon,
+        company_name: "EpicMetry",
+        icon: epicmetryIcon,
         iconBg: "#383E56",
         date: "Apr. 2025 - Present",
         points: [
-            "Leading development of Al Rais's cross-platform mobile app using React Native, building core modules including hotels, flights, activities, bookings, cart, and account with end-to-end RESTful API integrations.",
-            "Architected serverless backend infrastructure on AWS for Al Rais, defining and deploying Lambda functions to handle core business logic and API workloads.",
-            "Led TradeSocial platform development, built cross-platform React Native mobile app from scratch and modernized the legacy web app, reducing technical debt by 40%.",
-            "Drove UI/UX modernization initiatives across the platform, increasing user satisfaction by 30% and reducing interaction friction by 25%.",
-            "Conduct technical interviews for MERN and React Native roles; mentor junior developers across frontend and backend teams.",
+            "Own backend architecture for Al Rais, designing AWS Lambda services and REST APIs for hotels, flights, activities, bookings, cart, and account.",
+            "Define service boundaries, API contracts, business logic, and data flows with a focus on scalability, maintainability, and reliability.",
+            "Architect serverless infrastructure on AWS and make technical decisions for evolving product requirements.",
+            "Led TradeSocial modernization, improving backend architecture and APIs while reducing technical debt by 40%.",
+            "Drive engineering standards through code reviews, technical interviews, mentoring, and architecture decisions.",
         ],
     },
     {
@@ -164,9 +164,10 @@ export const experiencesArray = [
         iconBg: "#E6DEDD",
         date: "Nov. 2024 - May 2025",
         points: [
-            "Led development of CreditBase platform using Next.js and TypeScript, integrating LLM-powered document parsing with the Anthropic Claude API to analyze and compare complex legal documents 60% faster.",
-            "Delivered 4+ features for Pocket Mate AI mental health app, leveraging OpenAI API and prompt engineering to enhance conversational performance and user experience for 500+ daily active users.",
-            "Integrated RESTful APIs and fixed 40+ critical bugs across Next.js, NestJS, and MongoDB stack, increasing system uptime to 99.2% and reducing latency by 35%.",
+            "Led CreditBase backend development using NestJS, TypeScript, and MongoDB, integrating Anthropic Claude for LLM-powered legal document parsing and comparison.",
+            "Designed AI document-processing workflows that reduced complex legal document analysis time by 60%.",
+            "Delivered 4+ features for Pocket Mate AI, leveraging OpenAI API and prompt engineering to enhance conversational performance and user experience for 500+ daily active users.",
+            "Resolved 40+ critical issues across NestJS, Next.js, and MongoDB, improving uptime to 99.2% and latency by 35%.",
         ],
     },
     {
@@ -176,8 +177,8 @@ export const experiencesArray = [
         iconBg: "#383E56",
         date: "Dec. 2023 - Mar. 2024",
         points: [
-            "Maintained Swift no-code platform for 4,000+ enterprise users using React, Node.js, and Express.js, enhancing 5+ modules and improving UI load time by 35%.",
-            "Resolved 20+ complex platform issues across bi-weekly sprints, reducing ticket resolution time by 50%.",
+            "Maintained backend services for a no-code enterprise platform serving 4,000+ users using Node.js and Express.js across 5+ modules.",
+            "Resolved 20+ complex platform issues, reducing ticket resolution time by 50%.",
         ],
     },
     {
@@ -185,10 +186,10 @@ export const experiencesArray = [
         company_name: "IANCON",
         icon: ianconIcon,
         iconBg: "#E6DEDD",
-        date: "Sep. 2021 - Oct. 2023",
+        date: "Sep. 2020 - Oct. 2023",
         points: [
-            "Developed buyer and seller consoles for Noonhut's multi-vendor food delivery marketplace using React, enabling 100+ vendors to process 500+ daily orders.",
-            "Implemented Firebase authentication and real-time database, reducing checkout abandonment by 20%.",
+            "Developed backend services and buyer/seller workflows for Noonhut, supporting 100+ vendors and 500+ daily orders.",
+            "Implemented Firebase authentication and real-time data services, reducing checkout abandonment by 20%.",
         ],
     },
 ];

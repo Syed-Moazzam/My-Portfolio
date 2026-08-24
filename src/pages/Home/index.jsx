@@ -155,20 +155,20 @@ const Home = () => {
                     and I'm from <b className="yellow"> Karachi, Pakistan.</b>
                     <br />
                     As a
-                    <b className="yellow"> Software Engineer </b>
-                    {/* with more than 4 years of experience */} with experience building scalable applications across
-                    <b className="yellow"> web, mobile, and cloud platforms, </b>
-                    I have strong proficiency in
-                    <b className="yellow"> JavaScript, React, and Next.js </b>
-                    with expertise in full-stack development, DevOps, AI/GenAI integration, and system architecture. Currently serving as a
+                    <b className="yellow"> Backend-focused Software Engineer </b>
+                    with 5+ years of experience building scalable services, APIs, and cloud infrastructure using
+                    <b className="yellow"> TypeScript, Node.js, NestJS, and AWS. </b>
+                    I specialize in backend architecture, database design, API integrations, and
+                    <b className="yellow"> AI/GenAI systems, </b>
+                    turning ambiguous requirements into production-ready solutions. Currently serving as a
                     <b className="yellow"> Senior Software Engineer, </b>
-                    I specialize in leveraging frameworks such as
-                    <b className="yellow"> React, React Native, Next.js, Node.js, Express.js, and NestJS </b>
-                    to craft reliable, scalable solutions with polished UI/UX. My proficiency extends to diverse databases including
-                    <b className="yellow"> MySQL, PostgreSQL, MongoDB, and Firebase, </b>
+                    I work across
+                    <b className="yellow"> Node.js, NestJS, Express.js, REST APIs, GraphQL, and microservices </b>
+                    with a strong focus on scalability, reliability, performance, and maintainability. My proficiency extends to databases including
+                    <b className="yellow"> PostgreSQL, MongoDB, MySQL, DynamoDB, Firebase, and Supabase, </b>
                     along with cloud platforms like
                     <b className="yellow"> AWS, Microsoft Azure, and GCP. </b>
-                    I have delivered high-impact solutions across fintech, health tech, and travel tech domains with a focus on performance and reliability.
+                    I have delivered high-impact solutions across fintech, health tech, and travel tech domains.
                   </p>
                 </Zoom>
               </Col>
