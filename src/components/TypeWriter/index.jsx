@@ -6,8 +6,8 @@ const TypeWriter = () => {
     <Typewriter
       options={{
         strings: [
-          "Backend-focused Software Engineer",
-          "Senior Software Engineer",
+          "Software Engineer",
+          "Experienced Full Stack AI Engineer",
           "Effective Problem Solver"
         ],
         autoStart: true,

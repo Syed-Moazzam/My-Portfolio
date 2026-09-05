@@ -12,6 +12,7 @@ import {
   SiNginx,
   SiOpenai,
   SiPrometheus,
+  SiPytorch,
   SiTerraform,
 } from "react-icons/si";
 
@@ -30,6 +31,7 @@ const TOOL_ITEMS = [
   { Icon: SiOpenai, name: "OpenAI API" },
   { Icon: TbRobot, name: "LangChain" },
   { Icon: GiArtificialIntelligence, name: "Hugging Face" },
+  { Icon: SiPytorch, name: "PyTorch" },
 ];
 
 const Toolstack = () => {
